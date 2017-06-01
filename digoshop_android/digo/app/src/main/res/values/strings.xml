@@ -1,0 +1,151 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">>
+    <string name="app_name">迪购商家</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_modify_class_config">ModifyClassConfigActivity</string>
+    <string name="title_activity_character_manager">CharacterManagerActivity</string>
+    <string name="title_activity_vip_manage">VipManageActivity</string>
+    <string name="title_activity_account_security">AccountSecurityActivity</string>
+    <string name="title_activity_add_user">AddUserActivity</string>
+    <string name="title_activity_user_manage">UserManageActivity</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="title_activity_shop_setting">ShopSettingActivity</string>
+    <string name="title_activity_money_platform">MoneyPlatformActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_vip_change_info">VipChangeInfoActivity</string>
+    <string name="title_activity_consume_finish">ConsumeFinishActivity</string>
+    <string name="title_activity_check_stand">CheckStandActivity</string>
+    <string name="title_activity_information_manage_activity_d">InformationManageActivity_d</string>
+    <string name="title_activity_create_message_activity_f">CreateMessageActivity_f</string>
+    <string name="title_activity_create_discount_event_activity_f">CreateDiscountEventActivity_f
+    </string>
+    <string name="title_activity_discount_coupon_manage_activity_f">DiscountCouponManageActivity_f
+    </string>
+    <string name="title_activity_customization_reply_activity_f">CustomizationReplyActivity_f
+    </string>
+    <string name="title_activity_discount_coupon_use_analyse_activity_f">
+        DiscountCouponUseAnalyseActivity_f
+    </string>
+    <string name="title_activity_goods_exchange_statics_activity_f">GoodsExchangeStaticsActivity_f
+    </string>
+    <string name="title_activity_limit_time_auction_analyse_activity_f">
+        LimitTimeAuctionAnalyseActivity_f
+    </string>
+    <string name="title_activity_operation_analyse_activity_f">OperationAnalyseActivity_f</string>
+    <string name="title_activity_sale_statistics_analyse_activity_f">
+        SaleStatisticsAnalyseActivity_f
+    </string>
+    <string name="title_activity_check_coupon_activity_r">CheckCouponActivity_r</string>
+    <string name="title_activity_coupon_statistics_activity_r">CouponStatisticsActivity_r</string>
+    <string name="title_activity_quick_login_activity_f">QuickLoginActivity_f</string>
+    <string name="title_activity_store_add_run_kinds">StoreAddRunKinds</string>
+    <string name="title_activity_store_brand">StoreBrandActivity</string>
+    <string name="title_activity_chose_coupon">ChoseCouponActivity</string>
+    <string name="title_activity_image_bucket_choose">ImageBucketChooseActivity</string>
+    <string name="title_activity_image_choose">ImageChooseActivity</string>
+    <string name="title_activity_image_zoom">ImageZoomActivity</string>
+    <string name="title_activity_image_bucket_one_choose">ImageBucketOneChooseActivity</string>
+    <string name="title_activity_image_one_choose">ImageOneChooseActivity</string>
+    <string name="title_activity_edit_discount_event">EditDiscountEventActivity</string>
+    <string name="title_activity_audit">AuditActivity</string>
+    <string name="title_activity_confrim_runkinds">ConfrimRunkindsActivity</string>
+    <string name="title_activity_store_setting">StoreSettingActivity</string>
+    <string name="title_activity_edit_message">EditMessageActivity</string>
+    <string name="title_activity_edit_exchange_good">EditExchangeGoodActivity</string>
+
+
+    //修改
+    <string name="title_main">商家管理系统</string>
+    <string name="title_mdgl">门店管理</string>
+    <string name="title_cxgl">促销管理</string>
+    <string name="title_kqgl">卡券管理</string>
+    <string name="title_hdgl">活动管理</string>
+    <string name="title_xfjs">消费结算</string>
+    <string name="title_tianjiajinyingpinlei">添加经营品类</string>
+    <string name="title_tianjiapinpai">添加品牌</string>
+    <string name="title_dianpuerweima">店铺二维码</string>
+    <string name="title_shangpinguanli">商品管理</string>
+    <string name="title_zhanghuanquan">账户安全</string>
+    <string name="title_xzyhq">新增优惠券</string>
+
+    <string name="title_xzhy">新增会员</string>
+    <string name="title_tjyh">添加用户</string>
+    <string name="title_gzyh">关注用户</string>
+    <string name="title_yhqck">优惠券查看</string>
+    <string name="title_xzpl">选择品类</string>
+    <string name="title_zzrz">资质认证</string>
+    <string name="title_xuanzeyhq">选择优惠券</string>
+    <string name="title_qrplyje">确认品类与金额</string>
+    <string name="title_xsjsgl">结算管理</string>
+
+    <string name="title_yhqtj">优惠券统计</string>
+    <string name="title_xjyhhd">新建优惠活动</string>
+    <string name="title_cjxx">创建消息</string>
+    <string name="title_sjlm">商家联盟</string>
+    <string name="title_yhdz">用户定制</string>
+    <string name="title_dzhf">定制回复</string>
+    <string name="title_yhqgl">优惠券管理</string>
+    <string name="title_yhqsyfx">优惠券使用分析</string>
+    <string name="title_bjyhhd">编辑优惠活动</string>
+    <string name="title_bjyhq">编辑优惠券</string>
+
+    <string name="title_bjxx">编辑消息</string>
+    <string name="title_ckhdxx">查看活动信息</string>
+    <string name="title_xzjssp">选择结算商品</string>
+    <string name="title_spdhtj">商品兑换统计</string>
+    <string name="title_xxgl">消息管理</string>
+    <string name="title_sjhz">商家合作</string>
+    <string name="title_xgdjpz">修改等级配置</string>
+    <string name="title_rgjs">认购结算</string>
+
+    <string name="title_txdd">填写订单</string>
+    <string name="title_jyfx">经营分析</string>
+    <string name="title_plhf">评论回复</string>
+    <string name="title_mmcz">密码重置</string>
+    <string name="title_sjbd">手机绑定</string>
+    <string name="title_xstjfx">销售统计分析</string>
+    <string name="title_scan">二维码/条形码</string>
+    <string name="title_jsjl">结算记录</string>
+
+    <string name="title_dppj">店铺评价</string>
+    <string name="title_sz">设置</string>
+    <string name="title_dpsz">店铺设置</string>
+    <string name="title_yhgl">用户管理</string>
+    <string name="title_sjyz">手机验证</string>
+    <string name="title_xghyxx">修改会员信息</string>
+    <string name="title_hydjpz">会员等级配置</string>
+    <string name="title_hygl">会员管理</string>
+    <string name="title_xtsy">系统首页</string>
+
+
+    <string name="btn_baocun">保存</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_xyb">下一步</string>
+    <string name="btn_xz">新增</string>
+    <string name="btn_fs">发送</string>
+    <string name="btn_cancle">取消</string>
+    <string name="btn_shangjia">上架</string>
+    <string name="btn_xiajia">下架</string>
+    <string name="btn_tuijian">推荐</string>
+    <string name="btn_tjdj">添加等级</string>
+    <string name="input_digits">_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="rationale_camera">拍照需要相机权限</string>
+    <string name="rationale_location_contacts">相册需要本地读取权限</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s"</string>
+    <string name="dibi">迪币</string>
+    <string name="title_union_title">*注：最多可以有15个联盟商家，请您择优联盟</string>
+    <string name="yuan">元</string>
+    <string name="zhe">折</string>
+    <string name="zhang">张</string>
+    <string name="sheng">剩</string>
+    <string name="coupon_condition">满%1$s元可用</string>
+    <string name="daijinquan">代金券</string>
+    <string name="zhekouquan">折扣券</string>
+    <string name="manjianquan">满减券</string>
+    <string name="zeng">元赠</string>
+    <string name="bi">币</string>
+
+</resources>

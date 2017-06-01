@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/layout_title"/>
+
+        <cn.bingoogolapple.qrcode.zxing.ZXingView
+            android:id="@+id/zxingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relone"
+            app:qrcv_animTime="1000"
+            app:qrcv_barCodeTipText="对准二维码/条码到框内即可扫描"
+            app:qrcv_barcodeRectHeight="@dimen/base_dimen_280"
+            app:qrcv_borderColor="@android:color/white"
+            app:qrcv_borderSize="@dimen/base_dimen_2"
+            app:qrcv_cornerColor="@color/white"
+            app:qrcv_cornerLength="@dimen/base_dimen_40"
+            app:qrcv_cornerSize="@dimen/base_dimen_6"
+            app:qrcv_isBarcode="false"
+            app:qrcv_isOnlyDecodeScanBoxArea="false"
+            app:qrcv_isScanLineReverse="true"
+            app:qrcv_isShowDefaultGridScanLineDrawable="true"
+            app:qrcv_isShowDefaultScanLineDrawable="false"
+            app:qrcv_isShowTipBackground="false"
+            app:qrcv_isShowTipTextAsSingleLine="true"
+            app:qrcv_isTipTextBelowRect="false"
+            app:qrcv_maskColor="#33FFFFFF"
+            app:qrcv_qrCodeTipText="将二维码/条码放入框内即可扫描"
+            app:qrcv_rectWidth="@dimen/base_dimen_520"
+            app:qrcv_scanLineColor="@color/white"
+            app:qrcv_scanLineMargin="0dp"
+            app:qrcv_scanLineSize="@dimen/base_dimen_2"
+            app:qrcv_tipTextColor="@android:color/white"
+            app:qrcv_tipTextMargin="@dimen/base_dimen_20"
+            app:qrcv_tipTextSize="@dimen/base_dimen_32"
+            app:qrcv_toolbarHeight="@dimen/base_dimen_112"
+            app:qrcv_topOffset="@dimen/base_dimen_180"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/radio_light"
+        android:layout_width="@dimen/base_dimen_80"
+        android:layout_height="@dimen/base_dimen_80"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_200"
+        android:background="@drawable/icon_off"
+        android:button="@null"/>
+
+</RelativeLayout>

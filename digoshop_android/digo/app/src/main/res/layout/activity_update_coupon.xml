@@ -1,0 +1,873 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="优惠劵类别"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="领取限制"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RadioGroup
+                    android:id="@+id/rg_coupon_zeng"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="正常领取"
+                        android:textSize="@dimen/base_dimen_28" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:text="消费满赠"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_zeng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="#c2c2c2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:layout_marginLeft="@dimen/base_dimen_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="消费满"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30" />
+
+
+                    <EditText
+                        android:id="@+id/et_coupon_zeng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请填写使用满足额度"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/zeng"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="@dimen/base_dimen_20"
+                        android:layout_height="@dimen/base_dimen_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/base_dimen_5"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:text="*"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/base_dimen_28" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="优惠主题"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <EditText
+                    android:id="@+id/et_coupun_theme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请填写优惠券主题"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textColorHint="@color/editext_word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tv_money_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="券面金额"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+
+                <com.bjut.servicedog.servicedog.view.DecimalEditText
+                    android:id="@+id/et_coupun_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="券面金额最高4位"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColorHint="@color/editext_word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:id="@+id/tv_danwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="元"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="#c2c2c2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:layout_marginLeft="@dimen/base_dimen_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="购物满额"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30" />
+
+
+                    <EditText
+                        android:id="@+id/et_coupun_full"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="请填写使用满足额度"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="元"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="@dimen/base_dimen_20"
+                        android:layout_height="@dimen/base_dimen_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/base_dimen_5"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:text="*"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/base_dimen_28" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="使用有效期"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_date_end"
+                        android:layout_width="@dimen/base_dimen_40"
+                        android:layout_height="@dimen/base_dimen_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:src="@drawable/rilipic" />
+
+                    <TextView
+                        android:id="@+id/tv_date_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_date_end"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="结束时间"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:id="@+id/zhi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_10"
+                        android:layout_toLeftOf="@+id/tv_date_end"
+                        android:text="至"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <ImageView
+                        android:id="@+id/img_date_start"
+                        android:layout_width="@dimen/base_dimen_40"
+                        android:layout_height="@dimen/base_dimen_40"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:layout_marginRight="@dimen/base_dimen_10"
+                        android:layout_toLeftOf="@+id/zhi"
+                        android:src="@drawable/rilipic" />
+
+                    <TextView
+                        android:id="@+id/tv_date_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/img_date_start"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="开始时间"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发放方式"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <RadioGroup
+                    android:id="@+id/rg_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_limit_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="不限量"
+                        android:textSize="@dimen/base_dimen_28" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_limit_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:text="每天限量"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="每天限量"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30" />
+
+
+                    <EditText
+                        android:id="@+id/et_limit_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="每日领取的最高数量"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:singleLine="true"
+                        android:textColor="@color/word_color"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                    <TextView
+                        android:layout_width="@dimen/base_dimen_20"
+                        android:layout_height="@dimen/base_dimen_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/base_dimen_5"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:text="*"
+                        android:textColor="@color/orange"
+                        android:textSize="@dimen/base_dimen_28" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="#c2c2c2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="发放数量"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <EditText
+                    android:id="@+id/et_coupun_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="发行数量最高4位"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/editext_word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="张"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:gravity="center_vertical"
+                    android:text="兑换价值"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <EditText
+                    android:id="@+id/et_coupun_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toLeftOf="@+id/bi"
+                    android:layout_toRightOf="@+id/t7"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="请填写所需币数量"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:singleLine="true"
+                    android:textColorHint="@color/editext_word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="币"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_20"
+                android:background="@color/under_color">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="店铺范围"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rg_range"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/male"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_only_shop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="只限本店"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                        <RadioButton
+                            android:id="@+id/rb_all_shop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="全部连锁"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:gravity="center_vertical"
+                    android:text="适用类别"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+
+                <TextView
+                    android:id="@+id/allProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="全场通用"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_28" />
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_100"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:text="使用说明"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_5"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:text="*"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_28" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:background="#c2c2c2" />
+
+
+            <EditText
+                android:id="@+id/et_coupun_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请输入优惠券使用说明"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLength="500"
+                android:minLines="3"
+                android:padding="@dimen/base_dimen_20"
+                android:textColorHint="#999999"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="#c2c2c2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <Button
+                    android:id="@+id/btn_cancle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base_dimen_80"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_gray_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_cancle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_40" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base_dimen_80"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_orange_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_40" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

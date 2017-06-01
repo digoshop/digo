@@ -1,0 +1,2 @@
+include ':app', ':timeslibrary', ':update', ':takephoto'
+project(':takephoto').projectDir = new File('takephoto_library')

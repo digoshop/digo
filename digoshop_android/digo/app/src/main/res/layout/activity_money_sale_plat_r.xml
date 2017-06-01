@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/efefef">
+
+        <include layout="@layout/layout_title"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relone"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="商家名称"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"/>
+
+                    <TextView
+                        android:id="@+id/consume_shopname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/word_time"
+                        android:textSize="@dimen/base_dimen_28"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="联系电话"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"/>
+
+                    <TextView
+                        android:id="@+id/consume_shopphone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/word_time"
+                        android:textSize="@dimen/base_dimen_28"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="收银人员"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"/>
+
+                    <TextView
+                        android:id="@+id/consume_shopuser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_10"
+                        android:layout_weight="4"
+                        android:text=""
+                        android:textColor="@color/word_time"
+                        android:textSize="@dimen/base_dimen_28"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_20"
+                    android:background="@color/efefef"/>
+
+                <RelativeLayout
+                    android:id="@+id/rel_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:text="商品品类"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_right"
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhankai_2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_toLeftOf="@id/img_right"
+                        android:text="添加"
+                        android:textColor="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/base_dimen_120"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    android:paddingTop="@dimen/base_dimen_40">
+
+                    <com.bjut.servicedog.servicedog.view.MyGridView
+                        android:id="@id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="@dimen/base_dimen_20"
+                        android:numColumns="3"
+                        android:verticalSpacing="@dimen/base_dimen_20"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/base_dimen_20"
+                    android:paddingRight="@dimen/base_dimen_20"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本次消费"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:gravity="left"
+
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/base_dimen_28"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_28"
+                        />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_80"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_marginRight="@dimen/base_dimen_30"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:background="@drawable/bg_orange_btn"
+                    android:gravity="center"
+                    android:text="去结算"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_36"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

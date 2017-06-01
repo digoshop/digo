@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/customi_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_10"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:background="@null"
+        android:text="我需求一台1.5P的客厅空调,要求省电,美观,便宜"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:background="#F2F2F2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="定制要求:"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/word_color"-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/customi_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.5P的客厅空调"
+                android:textColor="@color/c5"
+                android:textSize="@dimen/base_dimen_28"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/c_horizion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/customi_imageone"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/customi_imagetwo"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/customi_imagethree"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/customi_imagefour"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/customi_imagefive"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_10"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        >
+
+        <TextView
+            android:id="@+id/customi_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2016-05-24 09:45"
+            android:textColor="@color/c5"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:id="@+id/currnet_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="立即回复"
+            android:textSize="@dimen/base_dimen_28"
+
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_rerly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#F2F2F2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/base_dimen_40"
+                android:layout_height="@dimen/base_dimen_40"
+                android:layout_marginLeft="@dimen/base_dimen_40"
+                android:src="@drawable/huifu1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:text="商家回复"
+                android:textColor="@color/word_color"
+                android:textSize="@dimen/base_dimen_28"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_replycontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:textColor="@color/c5"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <HorizontalScrollView
+            android:id="@+id/re_horizon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/reply_imageone"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/reply_imagetwo"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/reply_imagethree"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/reply_imagefour"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/reply_imagefive"
+                    android:layout_width="@dimen/base_dimen_180"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+
+                    />
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_replytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:text=""
+            android:textColor="@color/c5"
+            android:textSize="@dimen/base_dimen_28"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_12"
+        android:background="#efefef"
+        />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/text"
+        android:layout_width="@dimen/base_dimen_170"
+        android:layout_height="@dimen/base_dimen_60"
+        android:button="@null"
+        android:background="@drawable/seletor_item_kind"
+        android:gravity="center"
+        android:textSize="@dimen/base_dimen_24"
+        />
+
+</LinearLayout>

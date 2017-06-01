@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:divider="@drawable/sp_line"
+              android:fitsSystemWindows="true"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+    <include layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/base_dimen_400"
+        android:layout_height="@dimen/base_dimen_60"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginLeft="@dimen/base_dimen_100"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/base_dimen_100"
+        android:layout_marginTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/switch_button_left_checked"
+            android:gravity="center"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_30"
+            />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/switch_button_right"
+            android:gravity="center"
+            android:text="竞拍"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/base_dimen_30"
+            />
+    </LinearLayout>
+
+    <com.bjut.servicedog.servicedog.ui.MyViewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.bjut.servicedog.servicedog.ui.MyViewPager>
+
+</LinearLayout>

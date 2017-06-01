@@ -1,0 +1,498 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/c2">
+
+        <include layout="@layout/layout_title"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relone"
+            android:scrollbars="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_month"
+                        android:layout_width="@dimen/base_dimen_52"
+                        android:layout_height="@dimen/base_dimen_108"
+                        android:background="@drawable/jyfx_3y"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center_horizontal"
+                            android:layout_marginTop="@dimen/base_dimen_12"
+                            android:text="3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/base_dimen_32"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="月"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/base_dimen_32"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/base_dimen_10"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:orientation="horizontal"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="来电统计"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/phone_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv1"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/base_dimen_28"
+
+                                    />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/base_dimen_1"
+                                android:layout_height="@dimen/base_dimen_40"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/divide_color"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="商铺浏览量"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/shop_view_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv2"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/base_dimen_28"
+
+                                    />
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/base_dimen_1"
+                                android:layout_height="@dimen/base_dimen_40"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/divide_color"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/relation_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/relation"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/base_dimen_28"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/relation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="关注程度"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"/>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/base_dimen_1"
+                            android:background="@color/divide_color"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/base_dimen_10"
+                            android:layout_marginTop="@dimen/base_dimen_10"
+                            android:orientation="horizontal"
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="销售总额"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/sale_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv4"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/orange"
+                                    android:textSize="@dimen/base_dimen_28"
+
+                                    />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/base_dimen_1"
+                                android:layout_height="@dimen/base_dimen_40"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/divide_color"
+                                />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="客单量"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/order_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv5"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/orange"
+                                    android:textSize="@dimen/base_dimen_28"
+                                    />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="@dimen/base_dimen_1"
+                                android:layout_height="@dimen/base_dimen_40"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/divide_color"
+                                />
+
+                            <RelativeLayout
+                                android:id="@+id/reltwo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <TextView
+                                    android:id="@+id/tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="新增会员"
+                                    android:textColor="@color/word_color"
+                                    android:textSize="@dimen/base_dimen_30"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/new_add_vip_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/orange"
+                                    android:textSize="@dimen/base_dimen_28"
+                                    />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:background="@color/under_color"
+
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rel_discount_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="优惠券使用分析"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:src="@drawable/spsz_jiant"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rel_goods_exchange_statics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="商品兑换统计"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:src="@drawable/spsz_jiant"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_limit_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="限时竞拍分析"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:src="@drawable/spsz_jiant"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/user_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:src="@drawable/spsz_jiant"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="客户评价分析"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rel_sale_statics_analyse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/base_dimen_30"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_30"
+                    >
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="销售统计分析"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_24"
+                        android:layout_height="@dimen/base_dimen_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:src="@drawable/spsz_jiant"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/divide_color"
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

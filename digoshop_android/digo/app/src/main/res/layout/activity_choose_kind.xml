@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <include layout="@layout/layout_title"/>
+
+        <LinearLayout
+            android:id="@+id/linearone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relone"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:tag="1"
+                >
+
+                <TextView
+                    android:id="@+id/lefttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="销售品类"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_36"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/leftline"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_6"
+                    android:background="@color/orange"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:tag="0"
+                >
+
+                <TextView
+                    android:id="@+id/righttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/base_dimen_100"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="服务品类"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_36"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/rightline"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_6"
+                    android:background="@color/line"
+                    android:orientation="horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="@dimen/base_dimen_200"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearone"
+            android:background="#f8f8f8"
+            android:dividerHeight="@dimen/base_dimen_1"
+            android:scrollbars="none"
+            android:visibility="visible"
+
+            />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearone"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/listview"
+            android:background="@color/white"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:numColumns="2"
+            android:padding="@dimen/base_dimen_20"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            android:visibility="visible"
+            />
+
+        <GridView
+            android:id="@+id/gridview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearone"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/listview2"
+            android:background="@color/white"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:numColumns="2"
+            android:padding="@dimen/base_dimen_20"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            android:visibility="visible"
+            />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="@dimen/base_dimen_200"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearone"
+            android:background="#f8f8f8"
+            android:dividerHeight="@dimen/base_dimen_1"
+            android:scrollbars="none"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</RelativeLayout>

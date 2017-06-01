@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+
+        <LinearLayout
+            android:id="@+id/topdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relone"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/issue_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="发行数(张)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/down_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="领取数(张)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/down_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="领取占比(%)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/not_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="未使用数(张)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topdetail"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/usedcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="已使用数(张)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/consumption_ratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="消费占比(%)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="消费总额(元)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_grey_radius0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:text="0"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/base_dimen_44"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:gravity="center"
+                    android:text="客单价(元)"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_60"
+            android:layout_below="@+id/bottomdetail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginLeft="@dimen/base_dimen_100"
+            android:layout_marginRight="@dimen/base_dimen_100"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@drawable/xiazaiqkbg">
+
+            <TextView
+                android:id="@+id/used"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已使用统计"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_30"
+                />
+
+            <TextView
+                android:id="@+id/nouse"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="未使用记录"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/base_dimen_30"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_used"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c2"
+                android:overScrollMode="never"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_not_used"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_not_used"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c2"
+                android:overScrollMode="never"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

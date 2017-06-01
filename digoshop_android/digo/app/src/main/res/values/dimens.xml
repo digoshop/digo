@@ -1,0 +1,73 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- textsize -->
+
+
+    <!-- button -->
+
+    <!-- input bottom bar -->
+
+    //修改
+    <dimen name="base_dimen_1">0.5dp</dimen>
+    <dimen name="base_dimen_2">1dp</dimen>
+    <dimen name="base_dimen_4">2dp</dimen>
+    <dimen name="base_dimen_5">2.5dp</dimen>
+    <dimen name="base_dimen_6">3dp</dimen>
+    <dimen name="base_dimen_8">4dp</dimen>
+    <dimen name="base_dimen_10">5dp</dimen>
+    <dimen name="base_dimen_10_fu">-5dp</dimen>
+    <dimen name="base_dimen_12">6dp</dimen>
+    <dimen name="base_dimen_16">8dp</dimen>
+    <dimen name="base_dimen_20">10dp</dimen>
+    <dimen name="base_dimen_22">11dp</dimen>
+    <dimen name="base_dimen_24">12dp</dimen>
+    <dimen name="base_dimen_26">13dp</dimen>
+    <dimen name="base_dimen_28">14dp</dimen>
+    <dimen name="base_dimen_30">15dp</dimen>
+    <dimen name="base_dimen_32">16dp</dimen>
+    <dimen name="base_dimen_36">18dp</dimen>
+    <dimen name="base_dimen_40">20dp</dimen>
+    <dimen name="base_dimen_42">21dp</dimen>
+    <dimen name="base_dimen_44">22dp</dimen>
+    <dimen name="base_dimen_48">24dp</dimen>
+    <dimen name="base_dimen_50">25dp</dimen>
+    <dimen name="base_dimen_52">26dp</dimen>
+    <dimen name="base_dimen_56">28dp</dimen>
+    <dimen name="base_dimen_60">30dp</dimen>
+    <dimen name="base_dimen_70">35dp</dimen>
+    <dimen name="base_dimen_80">40dp</dimen>
+    <dimen name="base_dimen_90">45dp</dimen>
+    <dimen name="base_dimen_96">48dp</dimen>
+    <dimen name="base_dimen_100">50dp</dimen>
+    <dimen name="base_dimen_108">54dp</dimen>
+    <dimen name="base_dimen_110">55dp</dimen>
+    <dimen name="base_dimen_112">56dp</dimen>
+    <dimen name="base_dimen_120">60dp</dimen>
+    <dimen name="base_dimen_132">66dp</dimen>
+    <dimen name="base_dimen_140">70dp</dimen>
+    <dimen name="base_dimen_144">72dp</dimen>
+    <dimen name="base_dimen_150">75dp</dimen>
+    <dimen name="base_dimen_160">80dp</dimen>
+    <dimen name="base_dimen_170">85dp</dimen>
+    <dimen name="base_dimen_180">90dp</dimen>
+    <dimen name="base_dimen_200">100dp</dimen>
+    <dimen name="base_dimen_204">102dp</dimen>
+    <dimen name="base_dimen_210">105dp</dimen>
+    <dimen name="base_dimen_220">110dp</dimen>
+    <dimen name="base_dimen_240">120dp</dimen>
+    <dimen name="base_dimen_256">128dp</dimen>
+    <dimen name="base_dimen_260">130dp</dimen>
+    <dimen name="base_dimen_270">135dp</dimen>
+    <dimen name="base_dimen_280">140dp</dimen>
+    <dimen name="base_dimen_300">150dp</dimen>
+    <dimen name="base_dimen_360">180dp</dimen>
+    <dimen name="base_dimen_384">192dp</dimen>
+    <dimen name="base_dimen_400">200dp</dimen>
+    <dimen name="base_dimen_500">250dp</dimen>
+    <dimen name="base_dimen_520">260dp</dimen>
+    <dimen name="base_dimen_600">300dp</dimen>
+</resources>

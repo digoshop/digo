@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/layout_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@color/under_color"
+            >
+
+            <EditText
+                android:id="@+id/customization_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@null"
+                android:hint="在这里输入回复的内容"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:minLines="3"
+                android:textColorHint="@color/editext_word_color"
+                android:textSize="@dimen/base_dimen_28"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/base_dimen_160"
+            android:paddingTop="@dimen/base_dimen_20">
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:horizontalSpacing="@dimen/base_dimen_4"
+                android:numColumns="4"
+                android:scrollbars="horizontal"
+                android:verticalSpacing="@dimen/base_dimen_10"
+                >
+            </GridView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/customization_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_80"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:background="@drawable/bg_orange_btn"
+            android:gravity="center"
+            android:text="提交回复"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_36"
+            />
+    </LinearLayout>
+</LinearLayout>

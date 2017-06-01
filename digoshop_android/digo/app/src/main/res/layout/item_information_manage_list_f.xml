@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_weight="0.02"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/list_information_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/base_dimen_10"
+            android:text="爱眼日给眼睛放个假"
+            android:textColor="@color/word_color"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_4">
+
+            <TextView
+                android:id="@+id/list_information_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_dimen_10"
+                android:text="2016.02.12 14:34:50"
+                android:textColor="@color/word_time"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/list_information_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_toRightOf="@+id/list_information_date"
+                android:ellipsize="end"
+                android:maxWidth="@dimen/base_dimen_260"
+                android:padding="@dimen/base_dimen_10"
+                android:singleLine="true"
+                android:text="全员"
+                android:textColor="@color/word_time"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <ImageView
+                android:id="@+id/Ledit"
+                android:layout_width="@dimen/base_dimen_30"
+                android:layout_height="@dimen/base_dimen_30"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/base_dimen_28"
+                android:layout_toLeftOf="@+id/Ldelete"
+                android:src="@drawable/bianjipic" />
+
+
+            <ImageView
+                android:id="@+id/Ldelete"
+                android:layout_width="@dimen/base_dimen_30"
+                android:layout_height="@dimen/base_dimen_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shanchupic" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

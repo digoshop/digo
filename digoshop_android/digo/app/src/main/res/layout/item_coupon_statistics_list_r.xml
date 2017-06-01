@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="1362****698"
+            android:textColor="@color/word_color"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/money"
+            android:text="消费 "
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/yuan"
+            android:text="258"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/yuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=" 元"
+            android:textColor="@color/word_color"
+            android:textSize="@dimen/base_dimen_30"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="2016.03.21 10:45:10"
+            android:textColor="@color/word_time"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="编号:201650020"-->
+        <!--android:id="@+id/number"-->
+        <!--android:textSize="@dimen/textsize_small"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="14dp"-->
+        <!--android:src="@drawable/youhuiquan"-->
+        <!--android:layout_toLeftOf="@+id/number"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:scaleType="fitEnd"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

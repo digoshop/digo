@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_marginLeft="@dimen/base_dimen_40"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:gravity="center"
+                    android:text="以下为商家所经营的三级品类"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:minHeight="@dimen/base_dimen_100">
+
+                    <com.bjut.servicedog.servicedog.view.MyGridView
+                        android:id="@+id/gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/base_dimen_20"
+                        android:numColumns="3"
+                        android:padding="@dimen/base_dimen_20"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/base_dimen_20"
+                        >
+                    </com.bjut.servicedog.servicedog.view.MyGridView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:background="@color/line"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/under_color"
+                    android:paddingBottom="@dimen/base_dimen_20"
+                    android:paddingLeft="@dimen/base_dimen_30"
+                    android:paddingTop="@dimen/base_dimen_20"
+                    android:text="服务项目确认"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_1"
+                    android:background="@color/line"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_dimen_60"
+                        android:gravity="center_vertical"
+                        android:text="服务商品 :"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_kind"
+                        android:layout_width="@dimen/base_dimen_160"
+                        android:layout_height="@dimen/base_dimen_60"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@drawable/xuanzhongkuang"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:text=""
+                        android:textSize="@dimen/base_dimen_28"
+                        android:visibility="gone"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_30"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/base_dimen_60"
+                        android:gravity="center_vertical"
+                        android:text="消费合计 :"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/base_dimen_300"
+                        android:layout_height="@dimen/base_dimen_50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:background="@drawable/editborder"
+                        >
+
+                        <com.bjut.servicedog.servicedog.view.DecimalEditText
+                            android:id="@+id/ed_consume"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/base_dimen_6"
+                            android:background="@null"
+                            android:maxLines="1"
+                            android:maxLength="9"
+                            android:inputType="numberDecimal"
+                            android:textSize="@dimen/base_dimen_28"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/submit_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_80"
+                    android:layout_marginBottom="@dimen/base_dimen_30"
+                    android:layout_marginLeft="@dimen/base_dimen_40"
+                    android:layout_marginRight="@dimen/base_dimen_40"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:background="@drawable/bg_orange_btn"
+                    android:gravity="center"
+                    android:text="确认返回"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_36"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c2"
+            android:overScrollMode="never"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_add"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/base_dimen_80"-->
+    <!--android:layout_marginBottom="@dimen/base_dimen_20"-->
+    <!--android:layout_marginLeft="@dimen/base_dimen_30"-->
+    <!--android:layout_marginRight="@dimen/base_dimen_30"-->
+    <!--android:layout_marginTop="@dimen/base_dimen_20"-->
+    <!--android:background="@drawable/bg_orange_btn"-->
+    <!--android:gravity="center"-->
+    <!--android:text="添加商品"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/base_dimen_40"/>-->
+
+</LinearLayout>

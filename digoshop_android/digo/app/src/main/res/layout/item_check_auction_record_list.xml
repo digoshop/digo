@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/base_dimen_40">
+
+    <TextView
+        android:id="@+id/auction_record_phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="136******78"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/auction_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="2016-12-25 21:42:56"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_28"
+        />
+
+
+    <TextView
+        android:id="@+id/auction_record_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:layout_toLeftOf="@+id/tv_status"
+        android:text="012"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/base_dimen_20"/>
+</RelativeLayout>

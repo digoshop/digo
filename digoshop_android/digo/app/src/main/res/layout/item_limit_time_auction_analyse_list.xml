@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_132"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/limit_auction_image"
+            android:layout_width="@dimen/base_dimen_200"
+            android:layout_height="@dimen/base_dimen_132"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/limit_auction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="时尚修身连帽开衫卫衣"
+                android:textColor="@color/word_color"
+                android:textSize="@dimen/base_dimen_30"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_10"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认购价"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:text="¥"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:id="@+id/limit_auction_undermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:id="@+id/limit_auction_originalmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="100"
+                    android:textColor="#777777"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:text="成交价"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:id="@+id/limit_auction_dealmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:text="480"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_4"
+                    android:text="币"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开拍时间"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:id="@+id/limit_auction_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:text="20106-02-15 12:00"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+                <TextView
+                    android:id="@+id/limit_auction_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:text="已结束"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_24"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/divide_color"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_52"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看人数"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+                />
+
+            <TextView
+                android:id="@+id/limit_auction_checknumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:text="(100)"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="@dimen/base_dimen_30"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="#999999"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竞价人数"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+                />
+
+            <TextView
+                android:id="@+id/limit_auction_auctionnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:text="(100)"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="@dimen/base_dimen_30"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="#999999"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交人"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+                />
+
+            <TextView
+                android:id="@+id/limit_auction_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:text="(13152985422)"
+                android:textColor="#777777"
+                android:textSize="@dimen/base_dimen_22"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/base_dimen_2"
+                android:layout_height="@dimen/base_dimen_30"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@color/under_color"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

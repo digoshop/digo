@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+        <include layout="@layout/layout_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_80"
+            android:layout_below="@+id/relone"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear_allcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/my_reply_border"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_40"
+                        android:layout_height="@dimen/base_dimen_40"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/base_dimen_8"
+                        android:src="@drawable/pinglun"
+                        />
+
+                    <TextView
+                        android:id="@+id/allcomments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/base_dimen_6"
+                        android:padding="@dimen/base_dimen_4"
+                        android:text="全部"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+
+                    <TextView
+                        android:id="@+id/allcomments_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:padding="@dimen/base_dimen_4"
+                        android:text="0"
+                        android:textColor="#999999"
+                        android:textSize="@dimen/base_dimen_30"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_goodcomments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/goodcomments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:text="好评"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <TextView
+                    android:id="@+id/goodcomments_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/base_dimen_4"
+                    android:text="0"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_zhongcomments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/zhongcommens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:text="中评"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <TextView
+                    android:id="@+id/zhongcomments_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/base_dimen_4"
+                    android:text="0"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_badcomments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/badcomments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/base_dimen_6"
+                    android:text="差评"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <TextView
+                    android:id="@+id/badcomments_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/base_dimen_4"
+                    android:text="0"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="#efefef"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c2"
+                android:overScrollMode="never"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>

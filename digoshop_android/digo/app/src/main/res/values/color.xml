@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="divide_color">#d9d9d9</color>
+    <color name="efefef">#efefef</color>
+    <color name="title_background">#0e2b49</color>
+    <color name="title_word_color">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#00a0e8</color>
+    <color name="word_color">#454545</color>
+    <color name="cancel_word_color">#454545</color>
+    <color name="delete_word_color">#999999</color>
+    <color name="dialog_message_color">#777777</color>
+    <color name="word_time">#c4c4c4</color>
+    <color name="editext_word_color">#c4c4c4</color>
+    <color name="mytext">#585858</color>
+    <color name="orange">#f39800</color>
+    <color name="cache_count">#999999</color>
+    <color name="under_color">#f8f8f8</color>
+    <color name="red">#ff0000</color>
+    <color name="line">#c2c2c2</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="light_blue">#87d0f2</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="c2">#eeeeee</color>
+    <color name="c3">#dedede</color>
+    <color name="c5">#9b9b9b</color>
+    <color name="c7">#383838</color>
+    <color name="c9">#cc3333</color>
+
+
+    <color name="color_FFF7F4">#FFF7F4</color>
+    <color name="color_61399B">#61399B</color>
+    <color name="color_F4F0FE">#F4F0FE</color>
+    <color name="color_FF9400">#FF9400</color>
+    <color name="color_FDFAEC">#FDFAEC</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_BBBBBB">#BBBBBB</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="multiple_image_select_primaryDark">#0e2b49</color>
+
+</resources>

@@ -1,0 +1,15 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_80"
+        android:background="@drawable/border_bottom_grey"
+        android:gravity="center"
+        android:text="家具建材"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_28"/>
+</LinearLayout>

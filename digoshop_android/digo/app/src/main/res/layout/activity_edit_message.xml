@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/layout_title"/>
+
+        <LinearLayout
+            android:id="@+id/topll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relone"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                >
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="消息标题"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+
+                <EditText
+                    android:id="@+id/Message_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_90"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:layout_toRightOf="@+id/t1"
+                    android:background="@null"
+                    android:hint="请填写促销消息的标题"
+                    android:singleLine="true"
+                    android:textColorHint="@color/editext_word_color"
+                    android:textSize="@dimen/base_dimen_28"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="#c2c2c2"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="消息内容"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="#c2c2c2"
+                />
+
+
+            <EditText
+                android:id="@+id/Message_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请在此处填写促销消息的具体内容..."
+                android:minLines="3"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:textColorHint="@color/editext_word_color"
+                android:textSize="@dimen/base_dimen_28"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_40"
+                android:background="@color/under_color"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="发送对象"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="#c2c2c2"
+                />
+        </LinearLayout>
+
+        <com.bjut.servicedog.servicedog.view.MyGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send"
+            android:layout_below="@+id/topll"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:numColumns="3"
+            android:padding="@dimen/base_dimen_20"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            >
+        </com.bjut.servicedog.servicedog.view.MyGridView>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_80"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@drawable/bg_orange_btn"
+            android:gravity="center"
+            android:text="发 送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_36"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title"/>
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linear300"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="@color/editext_word_color"-->
+
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/runkind"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/runname"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="消费品类"-->
+        <!--android:textColor="@color/word_color"-->
+        <!--android:textSize="14sp"-->
+        <!--/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:src="@drawable/hygl_xial"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/userkind"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/username"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="全部客户"-->
+        <!--android:textColor="@color/word_color"-->
+        <!--android:textSize="14sp"-->
+        <!--/>-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:src="@drawable/hygl_xial"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="@color/c5"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="@dimen/base_dimen_12"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/statis_salemoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_40"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销售金额(元)"
+                    android:textColor="@color/cancel_word_color"
+                    android:textSize="@dimen/base_dimen_28"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/c5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/statis_ordertotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_40"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="客户单量"
+                    android:textColor="@color/cancel_word_color"
+                    android:textSize="@dimen/base_dimen_28"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/base_dimen_1"
+                android:layout_height="match_parent"
+                android:background="@color/c5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:id="@+id/statis_average"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_40"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平均客单价(元)"
+                    android:textColor="@color/cancel_word_color"
+                    android:textSize="@dimen/base_dimen_28"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:background="@color/c5"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c2"
+                android:overScrollMode="never"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

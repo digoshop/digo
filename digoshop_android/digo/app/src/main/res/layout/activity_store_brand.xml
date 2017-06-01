@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include layout="@layout/layout_title"/>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relone"
+            android:layout_marginLeft="@dimen/base_dimen_40"
+            android:layout_marginRight="@dimen/base_dimen_40"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:layout_toRightOf="@+id/listView"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:numColumns="2"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            />
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="@dimen/base_dimen_220"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relone"
+            android:scrollbars="none">
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

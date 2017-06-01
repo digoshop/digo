@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_1"
+            android:layout_below="@+id/rr2"
+            android:background="@color/divide_color" />
+
+        <LinearLayout
+            android:id="@+id/rr2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_80"
+            android:layout_below="@+id/relone"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="会员总数"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:id="@+id/vip_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人"
+                    android:textColor="#454545"
+                    android:textSize="@dimen/base_dimen_30" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_vip_class"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/levelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="全部会员"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:src="@drawable/hygl_xial" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_time_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/timename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="按时间查询"
+                    android:textColor="@color/word_color"
+                    android:textSize="@dimen/base_dimen_30" />
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_20"
+                    android:layout_height="@dimen/base_dimen_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/base_dimen_10"
+                    android:src="@drawable/hygl_xial" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/c2"
+                android:overScrollMode="never" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_120"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/add_new_vip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_80"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/base_dimen_20"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:background="@drawable/bg_orange_btn"
+                android:gravity="center"
+                android:text="添加会员"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_36" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

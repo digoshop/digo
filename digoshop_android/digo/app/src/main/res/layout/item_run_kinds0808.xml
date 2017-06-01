@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:gravity="center"
+    android:padding="@dimen/base_dimen_20"
+    android:text="家具建材"
+    android:textColor="@color/word_color"
+    android:textSize="@dimen/base_dimen_30"/>

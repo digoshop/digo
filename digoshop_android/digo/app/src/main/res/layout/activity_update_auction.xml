@@ -1,0 +1,342 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/sp_line"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_marginRight="@dimen/base_dimen_20"
+                    android:minHeight="@dimen/base_dimen_100"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="商品名称"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30" />
+
+                    <TextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择商品"
+                        android:textColor="@color/word_color"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_auction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/sp_line"
+                    android:orientation="vertical"
+                    android:showDividers="middle"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_100"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="起拍积分"
+                            android:textColor="@color/word_color"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_30" />
+
+                        <EditText
+                            android:id="@+id/et_auction_integral"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/base_dimen_20"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:hint="竞拍所需币"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/word_color"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:text="币"
+                            android:textColor="@color/word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_100"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="领取金额"
+                            android:textColor="@color/word_color"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_30" />
+
+                        <EditText
+                            android:id="@+id/et_auction_money"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/base_dimen_20"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:hint="领取所需的金额"
+                            android:inputType="numberDecimal"
+                            android:singleLine="true"
+                            android:textColor="@color/word_color"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:text="元"
+                            android:textColor="@color/word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_100"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:layout_marginRight="@dimen/base_dimen_30">
+
+                        <TextView
+                            android:id="@+id/t7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="开拍时间"
+                            android:textColor="@color/word_color"
+                            android:textSize="@dimen/base_dimen_30" />
+
+                        <ImageView
+                            android:id="@+id/img_auction_time"
+                            android:layout_width="@dimen/base_dimen_30"
+                            android:layout_height="@dimen/base_dimen_30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/shiduan01" />
+
+                        <TextView
+                            android:id="@+id/tv_auction_time"
+                            android:layout_width="@dimen/base_dimen_160"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/img_auction_time"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="竞拍时间点"
+                            android:inputType="date"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+
+                        <ImageView
+                            android:id="@+id/img_auction_date"
+                            android:layout_width="@dimen/base_dimen_30"
+                            android:layout_height="@dimen/base_dimen_30"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/base_dimen_10"
+                            android:layout_toLeftOf="@+id/tv_auction_time"
+                            android:src="@drawable/tjjp_rili" />
+
+                        <TextView
+                            android:id="@+id/tv_auction_date"
+                            android:layout_width="@dimen/base_dimen_160"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/base_dimen_20"
+                            android:layout_toLeftOf="@+id/img_auction_date"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="竞拍日期"
+                            android:inputType="date"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_28" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_100"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="加价幅度"
+                            android:textColor="@color/word_color"
+                            android:textColorHint="@color/editext_word_color"
+                            android:textSize="@dimen/base_dimen_30" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/base_dimen_20"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_jian"
+                                android:layout_width="@dimen/base_dimen_60"
+                                android:layout_height="@dimen/base_dimen_60"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_remove"
+                                android:textColor="@color/word_color"
+                                android:textSize="@dimen/base_dimen_28" />
+
+                            <TextView
+                                android:id="@+id/tv_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/base_dimen_10"
+                                android:layout_marginRight="@dimen/base_dimen_10"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:minWidth="@dimen/base_dimen_60"
+                                android:singleLine="true"
+                                android:text="10"
+                                android:textColor="@color/word_color"
+                                android:textColorHint="@color/editext_word_color"
+                                android:textSize="@dimen/base_dimen_28" />
+
+                            <Button
+                                android:id="@+id/btn_jia"
+                                android:layout_width="@dimen/base_dimen_60"
+                                android:layout_height="@dimen/base_dimen_60"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/icon_add"
+                                android:textColor="@color/word_color"
+                                android:textSize="@dimen/base_dimen_28" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/base_dimen_100"
+                        android:layout_marginLeft="@dimen/base_dimen_30"
+                        android:gravity="center_vertical"
+                        android:text="竞拍规则"
+                        android:textColor="@color/word_color"
+                        android:textSize="@dimen/base_dimen_30" />
+
+
+                    <EditText
+                        android:id="@+id/et_auction_guize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:lineSpacingMultiplier="1.3"
+                        android:minLines="3"
+                        android:paddingBottom="@dimen/base_dimen_20"
+                        android:paddingLeft="@dimen/base_dimen_30"
+                        android:paddingRight="@dimen/base_dimen_20"
+                        android:paddingTop="@dimen/base_dimen_20"
+                        android:text="1、	所有拍品只在竞拍时段参与活动；\n2、	系统分为10时、12时、16时、18时、20时五个竞拍时段；\n3、	每个时段的竞拍时长为2小时，时间截止竞拍结束，领先者获得拍品认购资格；\n4、	商品以起拍迪币开始竞拍，每次按加价幅度逐次递增；\n5、	用户财富值需高于拍品的最高迪币+加价幅度方可参与竞拍；\n6、	每人每时段竞拍同一拍品时，限制10次竞拍机会；\n7、	拍品获得者在10日内到店领取拍品，领取时需交付相应金额。"
+                        android:textColorHint="@color/editext_word_color"
+                        android:textSize="@dimen/base_dimen_28" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_120"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_80"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_gray_btn"
+                        android:gravity="center"
+                        android:text="返回"
+                        android:textSize="@dimen/base_dimen_36" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/base_dimen_80"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:layout_marginRight="@dimen/base_dimen_20"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_orange_btn"
+                        android:gravity="center"
+                        android:text="保存"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/base_dimen_36" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

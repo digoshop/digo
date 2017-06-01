@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/base_dimen_20"
+              android:paddingRight="@dimen/base_dimen_20"
+              android:paddingTop="@dimen/base_dimen_20">
+
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主题名称 4.1-4.9家装盛典,灯具疯抢3天(促销广告)"
+        android:textColor="@color/word_color"
+        android:textSize="@dimen/base_dimen_30"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        >
+
+        <ImageView
+            android:id="@+id/event_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/base_dimen_20"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/discount_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2016.02.12 14:34"
+            android:textColor="#999999"
+            android:textSize="@dimen/base_dimen_28"
+            />
+
+        <TextView
+            android:id="@+id/discount_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:text="审核中..."
+            android:textColor="#999999"
+            android:textSize="@dimen/base_dimen_28"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:gravity="right"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/Loff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_32"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/my_tv_border"
+                    android:gravity="center"
+                    android:text="禁用"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_20"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Lput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/base_dimen_60"
+                    android:layout_height="@dimen/base_dimen_32"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/base_dimen_28"
+                    android:background="@drawable/my_tv_border"
+                    android:gravity="center"
+                    android:text="启用"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/base_dimen_20"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ledit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_28"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_30"
+                    android:layout_height="@dimen/base_dimen_30"
+                    android:src="@drawable/bianjipic"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Ldelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/base_dimen_32"
+                    android:layout_height="@dimen/base_dimen_32"
+                    android:src="@drawable/shanchupic"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

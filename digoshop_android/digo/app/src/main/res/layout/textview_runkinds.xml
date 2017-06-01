@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <CheckBox
+        android:id="@+id/cb_kind"
+        android:layout_width="@dimen/base_dimen_200"
+        android:layout_height="@dimen/base_dimen_60"
+        android:background="@drawable/seletor_item_kind"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="@dimen/base_dimen_24"
+        />
+
+</LinearLayout>
+
+    <!--<TextView-->
+    <!---->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:text="经营品类"-->
+    <!--android:background="@drawable/weixuanzhongkuang"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:id="@+id/text"-->
+    <!--android:onClick="selftDestruct"-->
+    <!--&gt;-->
+    <!--</TextView>-->

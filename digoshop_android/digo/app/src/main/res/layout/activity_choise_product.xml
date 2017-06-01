@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/sp_line"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/base_dimen_20">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:background="@drawable/bg_consume_search_edt"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/base_dimen_30"
+                        android:layout_height="@dimen/base_dimen_30"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/base_dimen_20"
+                        android:src="@drawable/fangdajing"/>
+
+                    <EditText
+                        android:id="@+id/et_productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_dimen_60"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="输入商品名称查询"
+                        android:paddingLeft="@dimen/base_dimen_10"
+                        android:textColorHint="@color/word_time"
+                        android:textSize="@dimen/base_dimen_28"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/base_dimen_60"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_consume_search_btn"
+                    android:gravity="center"
+                    android:text="查询"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_28"
+                    />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
